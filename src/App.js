@@ -3,6 +3,7 @@ import "./App.css";
 import ConnectionToApi from "./tests/ConnectionToApi.jsx";
 
 import Header from "./components/Header/Header";
+import DownloadApps from "./components/DownloadApps/DownloadApps";
 
 const IS_TESTING = process.env.REACT_APP_TESTING_TRUE || "false";
 
@@ -20,6 +21,7 @@ const App = () => {
 			) : (
 				<div className='App'>
 					<Header />
+					<DownloadApps />
 					<div>Type ID: {VEHICLE_TYPE_ID}</div>
 					<div>ID: {VEHICLE_ID}</div>
 				</div>

@@ -1,0 +1,13 @@
+.download-apps-section {
+	border: 1px solid cyan;
+	background-color: #fff;
+	width: 100%;
+	padding: 1.5rem 0;
+}
+
+.download-apps-section h1 {
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 0 auto;
+	width: 14em;
+}
