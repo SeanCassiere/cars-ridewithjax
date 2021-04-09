@@ -4,6 +4,7 @@ import ConnectionToApi from "./tests/ConnectionToApi.jsx";
 
 import Header from "./components/Header/Header";
 import DownloadApps from "./components/DownloadApps/DownloadApps";
+import Footer from "./components/Footer/Footer";
 
 const IS_TESTING = process.env.REACT_APP_TESTING_TRUE || "false";
 
@@ -22,6 +23,7 @@ const App = () => {
 				<div className='App'>
 					<Header />
 					<DownloadApps />
+					<Footer />
 				</div>
 			)}
 		</>

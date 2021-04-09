@@ -134,7 +134,7 @@
 	}
 	.header-flex-right .logo-container {
 		position: absolute;
-		right: 16rem;
+		right: 27rem;
 		top: 7rem;
 	}
 	.header-accent-item {
@@ -145,6 +145,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+	.header-primary-block {
+		width: 100%;
+	}
 	.header-accent-item {
 		position: relative;
 		left: 56rem;
