@@ -1,0 +1,30 @@
+:root {
+	--header-bg-clr: #f01327;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 72em;
+	overflow: hidden;
+}
+
+.App {
+	background-color: #bfbfbf;
+	min-height: 100vh;
+	height: 100%;
+}
+
+.bg-white {
+	background-color: #fff;
+}

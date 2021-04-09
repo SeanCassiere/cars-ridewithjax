@@ -2,6 +2,8 @@ import "./App.css";
 
 import ConnectionToApi from "./tests/ConnectionToApi.jsx";
 
+import Header from "./components/Header/Header";
+
 const IS_TESTING = process.env.REACT_APP_TESTING_TRUE || "false";
 
 const VEHICLE_TYPE_ID = new URLSearchParams(window.location.search).get("vehicleTypeId");
@@ -17,8 +19,7 @@ const App = () => {
 				</div>
 			) : (
 				<div className='App'>
-					<h2>Hello World</h2>
-					<br />
+					<Header />
 					<div>Type ID: {VEHICLE_TYPE_ID}</div>
 					<div>ID: {VEHICLE_ID}</div>
 				</div>

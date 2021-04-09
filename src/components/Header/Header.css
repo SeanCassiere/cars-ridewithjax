@@ -1,0 +1,133 @@
+.logo-circle {
+	width: 70vw;
+	height: 70vw;
+	max-width: 366px;
+	max-height: 350px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-circle img {
+	width: 100%;
+	transform: scale(0.8);
+}
+
+.header-section {
+	height: 32em;
+}
+
+.header-primary-block {
+	width: 100vw;
+	background-color: var(--header-bg-clr);
+	overflow: hidden;
+	height: 23em;
+	z-index: -1;
+	padding: 0 1.5rem;
+}
+
+.header-flex {
+	padding: 1rem 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-flex-left h1,
+.header-flex-left h2,
+.header-flex-left h3 {
+	color: #fff;
+	margin: 0;
+}
+
+.header-flex-left h1,
+.header-flex-left h2 {
+	font-size: 2.8em;
+}
+
+.header-flex-left h3 {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.header-flex-left a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #fff;
+}
+
+.header-flex-left .btn-link-action {
+	padding: 1rem 2rem;
+	outline: 2px solid #fff;
+	width: 11em;
+	margin: 1rem 0.25rem;
+}
+
+.header-flex-right .logo-container {
+	position: absolute;
+	right: 1rem;
+	z-index: 10;
+}
+
+.header-accent-item {
+	position: relative;
+	left: 3rem;
+	top: 2rem;
+	width: 100%;
+	height: 8.25em;
+}
+
+.header-accent-item .accent-circle {
+	height: 6em;
+	width: 6em;
+	background-color: var(--header-bg-clr);
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+	.header-primary-block {
+	}
+	.header-flex-right .logo-container {
+		position: absolute;
+		right: 2rem;
+		top: 8rem;
+	}
+	.header-accent-item {
+		position: relative;
+		left: 22rem;
+		top: 2rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header-section {
+		height: 36em;
+	}
+	.header-primary-block {
+		height: 30em;
+	}
+	.header-flex-left {
+		padding-top: 3rem;
+	}
+	.header-flex-right .logo-container {
+		position: absolute;
+		right: 16rem;
+		top: 7rem;
+	}
+	.header-accent-item {
+		position: relative;
+		left: 42rem;
+		top: 0rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header-accent-item {
+		position: relative;
+		left: 56rem;
+		top: 0rem;
+	}
+}
