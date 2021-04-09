@@ -7,7 +7,7 @@ import RightIcon from "../../assets/RightIcon.svg";
 
 const DownloadApps = () => {
 	return (
-		<section className='download-apps-section'>
+		<section className='bg-white download-apps-section'>
 			<div className='container'>
 				<div>
 					<h1>Download the Jax Rideshare Rentals App</h1>
