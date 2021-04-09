@@ -102,6 +102,9 @@
 }
 
 @media screen and (min-width: 800px) {
+	.header-section {
+		height: 23em;
+	}
 	.header-flex-right .logo-container {
 		position: absolute;
 		right: 9rem;
@@ -112,10 +115,16 @@
 		left: 53rem;
 		top: 0rem;
 	}
+
+	.header-flex-left {
+		padding-left: 2rem;
+	}
+
 	.header-flex-left h1,
 	.header-flex-left h2 {
 		font-size: 3.8em;
 	}
+
 	.header-flex-left h3 {
 		font-size: 1.4em;
 		font-weight: 500;
@@ -150,7 +159,7 @@
 	}
 	.header-accent-item {
 		position: relative;
-		left: 56rem;
+		left: 54rem;
 		top: 0rem;
 	}
 

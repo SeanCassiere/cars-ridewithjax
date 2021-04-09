@@ -2,6 +2,8 @@ import React, { useEffect, useReducer } from "react";
 import { fetchApi } from "../../hooks/fetchApi";
 import "./VehicleDetails.css";
 
+import CarShowcaseCard from "./CarShowcaseCard/CarShowcaseCard";
+
 const clientId = process.env.REACT_APP_CLIENT_ID || 1013;
 
 const initialState = {
@@ -48,7 +50,13 @@ const VehicleDetails = ({ typeId, vehicleId }) => {
 	return (
 		<>
 			{error && (window.location = "/")}
-			{loading ? "Loading..." : "Done Loading"}
+			{loading ? (
+				"Loading..."
+			) : (
+				<>
+					<CarShowcaseCard vehicle={vehicleDetails} type={vehicleTypeDetails} />
+				</>
+			)}
 		</>
 	);
 };
