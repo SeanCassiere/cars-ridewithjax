@@ -22,8 +22,6 @@ const App = () => {
 				<div className='App'>
 					<Header />
 					<DownloadApps />
-					<div>Type ID: {VEHICLE_TYPE_ID}</div>
-					<div>ID: {VEHICLE_ID}</div>
 				</div>
 			)}
 		</>

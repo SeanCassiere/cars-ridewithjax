@@ -1,5 +1,4 @@
 .download-apps-section {
-	border: 1px solid cyan;
 	background-color: #fff;
 	width: 100%;
 	padding: 1.5rem 0;
@@ -9,5 +8,42 @@
 	font-size: 1.6rem;
 	text-align: center;
 	margin: 0 auto;
-	width: 14em;
+	width: 12em;
+}
+
+.download-flex {
+	padding: 2rem 0rem;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.download-flex a,
+.download-flex a:visited {
+	text-decoration: none;
+	color: #73a3de;
+}
+
+.download-container {
+	text-align: center;
+	width: 100%;
+}
+
+.download-container span {
+	display: block;
+	font-size: 1.3rem;
+	margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+	.download-apps-section h1 {
+		font-size: 3.3rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.download-apps-section h1 {
+		font-size: 4.3rem;
+	}
 }
