@@ -1,6 +1,6 @@
 .logo-circle {
-	width: 70vw;
-	height: 70vw;
+	width: 66vw;
+	height: 66vw;
 	max-width: 366px;
 	max-height: 350px;
 	border-radius: 50%;
@@ -60,9 +60,10 @@
 }
 
 .header-flex-left .btn-link-action {
+	display: block;
 	padding: 1rem 2rem;
 	outline: 2px solid #fff;
-	width: 11em;
+	width: fit-content;
 	margin: 1rem 0.25rem;
 }
 
@@ -128,6 +129,7 @@
 		left: 56rem;
 		top: 0rem;
 	}
+
 	.header-flex-left h1,
 	.header-flex-left h2 {
 		font-size: 4.8em;

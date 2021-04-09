@@ -13,11 +13,10 @@ const Header = () => {
 							<h1>Jax Rideshare</h1>
 							<h2>Rentals</h2>
 							<h3>Reliable rental cars for gig work.</h3>
-							<div className='btn-link-action'>
-								<a href='https://ridewithjax.com/' rel='noreferrer' target='_blank'>
-									Learn More
-								</a>
-							</div>
+
+							<a href='https://ridewithjax.com/' className='btn-link-action' rel='noreferrer' target='_blank'>
+								Learn More
+							</a>
 						</div>
 						<div className='header-flex-right'>
 							<div className='logo-container'>
