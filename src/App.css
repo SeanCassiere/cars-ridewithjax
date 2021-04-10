@@ -19,6 +19,7 @@ body {
 	margin: 0 auto;
 	max-width: 62em;
 	overflow: hidden;
+	height: 100%;
 }
 
 .App {

@@ -4,6 +4,7 @@ import "./VehicleDetails.css";
 
 import CarShowcaseCard from "./CarShowcaseCard/CarShowcaseCard";
 import CarTypeShowcaseBlock from "./CarTypeShowcaseBlock/CarTypeShowcaseBlock";
+import FetchingDetailsLoader from "./FetchingDetailsLoader/FetchingDetailsLoader";
 
 const clientId = process.env.REACT_APP_CLIENT_ID || 1013;
 
@@ -53,7 +54,7 @@ const VehicleDetails = ({ typeId, vehicleId }) => {
 		<>
 			{error && (window.location = "/")}
 			{loading ? (
-				"Loading..."
+				<FetchingDetailsLoader />
 			) : (
 				<>
 					<CarShowcaseCard vehicle={vehicleDetails} type={vehicleTypeDetails} />
