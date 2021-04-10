@@ -1,0 +1,21 @@
+.bg-showcase {
+	background-color: var(--showcase-bg-clr);
+}
+
+.showcase-block {
+	height: max-content;
+}
+
+.type-showcase-grid {
+	margin: 3rem 2rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	max-width: 40em;
+}
+
+@media screen and (min-width: 768px) {
+	.type-showcase-grid {
+		margin: 3rem auto;
+	}
+}

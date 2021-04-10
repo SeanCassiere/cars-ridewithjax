@@ -3,6 +3,7 @@ import { fetchApi } from "../../hooks/fetchApi";
 import "./VehicleDetails.css";
 
 import CarShowcaseCard from "./CarShowcaseCard/CarShowcaseCard";
+import CarTypeShowcaseBlock from "./CarTypeShowcaseBlock/CarTypeShowcaseBlock";
 
 const clientId = process.env.REACT_APP_CLIENT_ID || 1013;
 
@@ -55,6 +56,7 @@ const VehicleDetails = ({ typeId, vehicleId }) => {
 			) : (
 				<>
 					<CarShowcaseCard vehicle={vehicleDetails} type={vehicleTypeDetails} />
+					<CarTypeShowcaseBlock vehicle={vehicleDetails} type={vehicleTypeDetails} />
 				</>
 			)}
 		</>
