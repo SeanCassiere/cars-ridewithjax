@@ -9,3 +9,13 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.loader-whitespace {
+	display: none;
+}
+@media screen and (min-width: 800px) {
+	.loader-whitespace {
+		display: block;
+		height: 10rem;
+	}
+}
