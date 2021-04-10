@@ -48,6 +48,7 @@ const VehicleDetails = ({ typeId, vehicleId }) => {
 			)
 			.catch(() => dispatch({ type: "SEARCH_FAILED" }));
 	}, [dispatch, vehicleId, typeId]);
+
 	return (
 		<>
 			{error && (window.location = "/")}

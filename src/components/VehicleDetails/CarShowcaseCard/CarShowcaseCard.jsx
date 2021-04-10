@@ -4,9 +4,9 @@ import "./CarShowcaseCard.css";
 import MissingCar from "../../../assets/undraw_city_driver_jh2h.svg";
 
 const CarShowcaseCard = ({ vehicle, type }) => {
-	console.log(type);
 	const imgSrc = vehicle.imageUrl.charAt(vehicle.imageUrl.length - 1) === "/" ? MissingCar : vehicle.imageUrl;
 	const htmlString = type.htmlContent === "" ? "<i>No description provided</i>" : type.htmlContent;
+
 	return (
 		<section className='vehicle-details'>
 			<div className='bg-white'>
