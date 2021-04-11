@@ -7,6 +7,9 @@ import MissingCar from "../../../assets/undraw_city_driver_jh2h.svg";
 const CarShowcaseCard = ({ vehicle, type }) => {
 	const imgSrc = vehicle.imageUrl.charAt(vehicle.imageUrl.length - 1) === "/" ? MissingCar : vehicle.imageUrl;
 	const htmlString = type.htmlContent === "" ? "<i>No description provided</i>" : type.htmlContent;
+	const vehicleStatus = vehicle.status === "OnRent" ? "On Rent" : vehicle.status;
+	const vehicleStatusClr =
+		vehicle.status === "OnRent" ? "#EC2F2F" : vehicle.status === "Available" ? "#38D141" : "#000000";
 
 	return (
 		<section className='vehicle-details'>
@@ -39,6 +42,9 @@ const CarShowcaseCard = ({ vehicle, type }) => {
 						>
 							<div className='vehicle-card-title'>
 								<h1>{`${vehicle.year} ${vehicle.make} ${vehicle.model}`}</h1>
+								<p>
+									Current Status :&nbsp;<span style={{ color: vehicleStatusClr }}>{vehicleStatus}</span>
+								</p>
 							</div>
 							<div className='vehicle-card-description'>
 								<div dangerouslySetInnerHTML={{ __html: htmlString }}></div>
