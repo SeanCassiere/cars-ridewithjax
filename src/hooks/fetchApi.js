@@ -32,7 +32,8 @@ export async function fetchApi(cId, vId, vTId) {
 		API, however should that not succeed this application level check has
 		been added to ensure that no incorrect vehicle type is shown from the
 		client account.*/
-		if (vData.data.vehicleTypeId !== vTId) throw new Error("Request vehicle and type do not match");
+		if (vData.data.vehicleTypeId.toString() !== vTId.toString())
+			throw new Error("Request vehicle and type do not match");
 
 		vehicleData = vData.data;
 		vehicleTypeData = vTData.data;
