@@ -52,7 +52,7 @@ const VehicleDetails = ({ typeId, vehicleId }) => {
 
 	return (
 		<>
-			{error && (window.location = "/")}
+			{error && (window.location = `${process.env.REACT_APP_HOME_DIRECTORY}/`)}
 			{loading ? (
 				<FetchingDetailsLoader />
 			) : (

@@ -26,11 +26,16 @@ export async function fetchApi(cId, vId, vTId) {
 
 	try {
 		const [vData, vTData] = await axios.all([vRes, vTRes]);
+
+		/* This check should not be needed since searching of the vehicle with
+		an incorrect/mismatched vehicle type id should return an error from the
+		API, however should that not succeed this application level check has
+		been added to ensure that no incorrect vehicle type is shown from the
+		client account.*/
+		if (vData.data.vehicleTypeId !== vTId) throw new Error("Request vehicle and type do not match");
+
 		vehicleData = vData.data;
 		vehicleTypeData = vTData.data;
-
-		// console.log(vehicleData);
-		// console.log(vehicleTypeData);
 	} catch (error) {
 		console.log(`Vehicle Search Error: \n${error}`);
 		throw new Error("Vehicle Search Failed");
