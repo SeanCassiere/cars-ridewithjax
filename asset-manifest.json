@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cars-ridewithjax/static/css/main.786b2e4c.chunk.css",
-    "main.js": "/cars-ridewithjax/static/js/main.0aaa9f8d.chunk.js",
-    "main.js.map": "/cars-ridewithjax/static/js/main.0aaa9f8d.chunk.js.map",
+    "main.css": "/cars-ridewithjax/static/css/main.ae4fb069.chunk.css",
+    "main.js": "/cars-ridewithjax/static/js/main.5197c262.chunk.js",
+    "main.js.map": "/cars-ridewithjax/static/js/main.5197c262.chunk.js.map",
     "runtime-main.js": "/cars-ridewithjax/static/js/runtime-main.32815fb3.js",
     "runtime-main.js.map": "/cars-ridewithjax/static/js/runtime-main.32815fb3.js.map",
     "static/js/2.39d590c6.chunk.js": "/cars-ridewithjax/static/js/2.39d590c6.chunk.js",
     "static/js/2.39d590c6.chunk.js.map": "/cars-ridewithjax/static/js/2.39d590c6.chunk.js.map",
     "index.html": "/cars-ridewithjax/index.html",
-    "static/css/main.786b2e4c.chunk.css.map": "/cars-ridewithjax/static/css/main.786b2e4c.chunk.css.map",
+    "static/css/main.ae4fb069.chunk.css.map": "/cars-ridewithjax/static/css/main.ae4fb069.chunk.css.map",
     "static/js/2.39d590c6.chunk.js.LICENSE.txt": "/cars-ridewithjax/static/js/2.39d590c6.chunk.js.LICENSE.txt",
     "static/media/CarBaggage.4ea6a941.svg": "/cars-ridewithjax/static/media/CarBaggage.4ea6a941.svg",
     "static/media/CarDoor.d7da4211.svg": "/cars-ridewithjax/static/media/CarDoor.d7da4211.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.32815fb3.js",
     "static/js/2.39d590c6.chunk.js",
-    "static/css/main.786b2e4c.chunk.css",
-    "static/js/main.0aaa9f8d.chunk.js"
+    "static/css/main.ae4fb069.chunk.css",
+    "static/js/main.5197c262.chunk.js"
   ]
 }
